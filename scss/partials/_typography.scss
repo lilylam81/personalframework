@@ -4,7 +4,11 @@ h1, h2, h3, h4, h5, h6 { color: $color-text-headings; }
 
 /* BASE TEXT FONTS */
 body { font-family: $font-family-sans; }
-h1, h2, h3, h4, h5, h6 { font-family: $font-family-serif; }
+h1, h2, h3, h4, h5, h6 { 
+    font-family: $font-family-serif; 
+    font-weight: 700;
+    font-size: normal;
+}
 
 /* BASE TYPOGRAPHY */
 body {
@@ -30,6 +34,14 @@ h3 {
 /* LIMIT NUMBER OF CHARACTERS PER LINE */
 p { max-width: 40em; }
 
+/* LINK */
+a {
+    color: $color-link;
+    &:hover {
+        color: $color-link-dark;
+    }
+}
+
 /* HORIZONTAL LINE */
 hr {
     border: 0;
@@ -41,14 +53,14 @@ hr {
 /* TYPE SPECIMEN */
 .headline {
     font-size: 4em;
-    font-weight: normal;
+    font-weight: 700;
     line-height: 1;
     margin: 0;
     color: $color-accent;
 }   
 
 .subheadline {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 2.5em;
     line-height: 1.1;
     color: $color-lightgrey;
@@ -62,8 +74,5 @@ hr {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-bottom: 5px solid $color-accent;
-    display: table;
-    padding: 0 0 0.5em 0;
-    margin: 1em auto 3em auto;
+    margin: 3em 0;
 }

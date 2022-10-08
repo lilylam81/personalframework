@@ -4,14 +4,16 @@
 // VARIABLES
 $color-text-body: rgba(0,0,0,0.8);
 $color-text-headings: rgba(0,0,0,1);
-$color-accent: rgb(0,155,0);
-$color-accent-dark: rgb(0,102,0);
-$color-accent-light: rgb(176,223,176);
+$color-accent: rgb(233, 156, 130);
+$color-accent-dark: rgb(239, 108, 64);
+$color-accent-light: rgb(253, 245, 230);
+$color-link: rgb(168, 203, 180);
+$color-link-dark: rgb(73, 160, 110);
 
-$color-lightgrey: rgba(0,0,0,0.5);
+$color-lightgrey: rgba(30, 69, 167, 0.5);
 
-$font-family-sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-serif: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+$font-family-sans: 'acumin-pro', Helvetica, Arial, sans-serif;
+$font-family-serif: 'kepler-std-display', Georgia, 'Times New Roman', Times, serif;
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
@@ -21,6 +23,7 @@ $breakpoint-large: 1250px;
 // IMPORTS
 @import "partials/toc";
 @import "partials/typography";
+@import "partials/helpers";
 @import "partials/buttons";
 @import "partials/media";
 @import "partials/layout";

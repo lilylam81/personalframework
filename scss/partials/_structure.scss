@@ -2,20 +2,31 @@
 
 /* SITE HEADER */
 .site-header {
-    background: $color-accent-dark;
+    position: absolute;
+    width: 100%;
     padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     a { 
-        color: white;
+        color: black;
         text-decoration: none;
     }
 
     h1 {
         font-size: 1.5em;
         margin: 0;
+    }
+
+    .site-id {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 120px;
+        margin-right: 0.5em;
     }
 }
 
@@ -50,6 +61,9 @@
 
 section {
     padding: 4em 0;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
 }
 
 /* HERO SECTION */
@@ -57,6 +71,9 @@ section {
     background: $color-accent-light;
     text-align: center;
     padding: 6em 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 
     h1 {
         margin-bottom: 0.25em;
