@@ -349,14 +349,14 @@ section {
   top: 0.75em;
   right: 0.75em;
   margin: 0;
-  font-size: 1.5em;
+  font-size: inherit;
   line-height: 1;
   z-index: 20;
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
-.site-header .site-nav svg rect {
+.site-header .site-nav .menu-button svg rect {
   -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
 }
