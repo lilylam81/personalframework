@@ -43,13 +43,17 @@
     li {
         font-size: 4vw;
         min-width: 20vw;
-        transform: translate(10%,0);
-        transition: 0.3s all ease-out 0.3s;
-        opacity: 0;
+        // transform: translate(10%,0);
+        // transition: 0.3s all ease-out 0.3s;
+        // opacity: 0;
     }
 
     #menubar-top, #menubar-middle, #menubar-bottom {
         transform-origin: center;   
+    }
+
+    &[data-navstate="open"] {
+
     }
 
     &[data-navstate="open"] {
@@ -74,8 +78,8 @@
         }
 
         li {
-            transform: translate(0,0);
-            opacity: 1;
+            // transform: translate(0,0);
+            // opacity: 1;
         }
     }
 }

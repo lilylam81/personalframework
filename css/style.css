@@ -393,11 +393,6 @@ section {
 .site-header .site-nav li {
   font-size: 4vw;
   min-width: 20vw;
-  -webkit-transform: translate(10%, 0);
-          transform: translate(10%, 0);
-  -webkit-transition: 0.3s all ease-out 0.3s;
-  transition: 0.3s all ease-out 0.3s;
-  opacity: 0;
 }
 .site-header .site-nav #menubar-top, .site-header .site-nav #menubar-middle, .site-header .site-nav #menubar-bottom {
   -webkit-transform-origin: center;
@@ -421,12 +416,6 @@ section {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
-.site-header .site-nav[data-navstate=open] li {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
-}
-
 /* FOOTER SITE NAV */
 .site-footer .site-nav ul {
   margin: 0;
