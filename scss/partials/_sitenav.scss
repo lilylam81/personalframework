@@ -37,7 +37,7 @@
         justify-content: center;
         transform: translate(100%,0);
         transition: 0.3s all ease-out;
-        z-index: 1;
+        z-index: 10;
     }
 
     li {
@@ -50,12 +50,6 @@
 
     #menubar-top, #menubar-middle, #menubar-bottom {
         transform-origin: center;   
-    }
-
-    &[data-navstate="closed"] {
-        ul {
-            transform: translate(100%,0);
-        }
     }
 
     &[data-navstate="open"] {

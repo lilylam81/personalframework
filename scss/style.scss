@@ -22,7 +22,6 @@ $breakpoint-large: 1250px;
 
 // IMPORTS
 @import "partials/toc";
-@import "partials/sitenav";
 @import "partials/typography";
 @import "partials/helpers";
 @import "partials/buttons";
@@ -30,3 +29,4 @@ $breakpoint-large: 1250px;
 @import "partials/layout";
 @import "partials/grid";
 @import "partials/structure";
+@import "partials/sitenav";
