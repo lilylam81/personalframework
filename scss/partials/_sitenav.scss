@@ -52,8 +52,10 @@
         transform-origin: center;   
     }
 
-    &[data-navstate="open"] {
-
+    &[data-navstate="closed"] {
+        ul {
+            transform: translate(100%,0);
+        }
     }
 
     &[data-navstate="open"] {

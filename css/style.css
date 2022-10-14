@@ -398,6 +398,10 @@ section {
   -webkit-transform-origin: center;
           transform-origin: center;
 }
+.site-header .site-nav[data-navstate=closed] ul {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
 .site-header .site-nav[data-navstate=open] .menu-button {
   position: fixed;
 }
