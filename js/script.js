@@ -17,15 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // REVEAL ON SCROLL JS
 // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
-const myobserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+let options = {
+    threshold: .25
+}
+
+const myobserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.setAttribute('data-sectionstate', 'active');
         } else {
             entry.target.setAttribute('data-sectionstate', 'inactive');
         }
     });
-});
+}, options);
+
 document.querySelectorAll('.animate-on-scroll').forEach((section) => {
     myobserver.observe(section);
 });
